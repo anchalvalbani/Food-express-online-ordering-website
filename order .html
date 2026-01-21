@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <nav class="navbar">
+    <div class="nav-logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png">
+        <span>FoodExpress</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="homepage .html">Home</a></li>
+        <li><a href="order .html">Order</a></li>
+    </ul>
+</nav>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodExpress | Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="small-header">
+        <h1>Place Your Order 🛒</h1>
+    </header>
+
+    <div class="customer">
+        <h3>Customer Details</h3>
+        <input type="text" id="cname" placeholder="Customer Name">
+        <input type="text" id="cphone" placeholder="Contact Number">
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://www.recipetineats.com/tachyon/2019/08/Avocado-Chicken-Burgers_9.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>Rs 250</p>
+            <input type="number" id="burger" min="0" value="0">
+            <button onclick="addItem('Burger',250,'burger')">Add</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Rs 800</p>
+            <input type="number" id="pizza" min="0" value="0">
+            <button onclick="addItem('Pizza',800,'pizza')">Add</button>
+        </div>
+
+        <div class="card">
+            <img src="https://bakewithzoha.com/wp-content/uploads/2024/03/chicken-biryani-featured-1.jpg" alt="Biryani">
+            <h3>Biryani</h3>
+            <p>Rs 350</p>
+            <input type="number" id="biryani" min="0" value="0">
+            <button onclick="addItem('Biryani',350,'biryani')">Add</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Coffee">
+            <h3>Coffee</h3>
+            <p>Rs 400</p>
+            <input type="number" id="coffee" min="0" value="0">
+            <button onclick="addItem('Coffee',200,'coffee')">Add</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574" alt="Tea">
+            <h3>Tea</h3>
+            <p>Rs 120</p>
+            <input type="number" id="tea" min="0" value="0">
+            <button onclick="addItem('Tea',120,'tea')">Add</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.recipetineats.com/uploads/2017/09/Spring-Rolls-6.jpg" alt="Spring Roll">
+            <h3>Spring Roll</h3>
+            <p>Rs 180</p>
+            <input type="number" id="roll" min="0" value="0">
+            <button onclick="addItem('Spring Roll',180,'roll')">Add</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSseCuawSN-pmDuMukvP1nFYiU4PRvR78KbOw&s"
+                alt="Pasta">
+                <img src="https://images4.alphacoders.com/700/thumb-1920-700728.jpg" alt="pasta">
+            <h3>Pasta</h3>
+            <p>Rs 400</p>
+            <input type="number" id="pasta" min="0" value="0">
+            <button onclick="addItem('Pasta',400,'pasta')">Add</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.savoryexperiments.com/wp-content/uploads/2024/02/Cajun-Fries-19.jpg" alt="Fries">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFuNoIU7hPw5eLuTdlgh6GkCHuCbDF-x_FFWZUxavHfXLDCZ_XZN5H7R3Ubcbwac6IofVmQJNbR5DWwX11fhTyjg601tzxaEto-l8dGNLH5DsqAU5dIQf90LIw9au9HcUJhpdv-cGTbdE/s16000-rw/crispy-sweet-potato-fries-4.jpg"
+                alt="fries">
+            <h3>fries</h3>
+            <p>Rs 500</p>
+            <input type="number" id="fries" min="0" value="0">
+            <button onclick="addItem('fries',500,'fries')">Add</button>
+        </div>
+
+    </div>
+
+    <div class="bill">
+        <h2>Total Bill: Rs <span id="total">0</span></h2>
+        <button class="btn" onclick="placeOrder()">Confirm Order</button>
+        <button class="btn print" onclick="printBill()">Print Bill</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
